@@ -22,7 +22,7 @@ $ source install/local_setup.sh
 ```
 ## Running the executables
 Run the each command in a separate terminal window. Remember that the ROS2 SDK has to be sourced in every terminal window!
-These packages can be tested with the 'image_tools' package provided by ROS.
+These packages can be tested with the `image_tools` package provided by ROS.
 
 ### Brightnes Level Detector
 ```
