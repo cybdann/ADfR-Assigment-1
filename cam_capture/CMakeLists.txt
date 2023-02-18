@@ -18,14 +18,13 @@ find_package(std_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(cv_bridge REQUIRED)
 
+include_directories(include)
+
 add_executable(brightness_level_detector src/bld_node.cpp src/brightness_level_detector.cpp)
 ament_target_dependencies(brightness_level_detector rclcpp std_msgs sensor_msgs)
 
-
-
 add_executable(light_position_indicator src/lpi_node.cpp src/light_position_indicator.cpp)
 ament_target_dependencies(light_position_indicator rclcpp std_msgs sensor_msgs OpenCV cv_bridge)
-
 
 install(TARGETS
   brightness_level_detector

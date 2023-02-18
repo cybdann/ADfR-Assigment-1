@@ -1,4 +1,4 @@
-#include "light_position_indicator.hpp"
+#include "cam_capture/light_position_indicator.hpp"
 
 /**
  * @brief Construct a new BrightnessLevelDetector object

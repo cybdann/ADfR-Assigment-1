@@ -1,4 +1,4 @@
-#include "brightness_level_detector.hpp"
+#include "cam_capture/brightness_level_detector.hpp"
 
 /**
  * @brief Construct a new BrightnessLevelDetector object
