@@ -13,3 +13,16 @@ $ cd ..
 $ colcon build
 $ source install/local_setup.sh
 ```
+## Running the executables
+Run the each command in a separate terminal window (remember that the ROS2 SDK has to be sourced in every terminal window!)
+
+### Brightnes Level Detector
+```
+ros2 run cam_capture brightness_level_detector
+```
+
+### Light Position Indicator
+```
+ros2 run cam_capture light_position_indicator
+```
+
