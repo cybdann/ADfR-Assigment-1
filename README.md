@@ -1,6 +1,13 @@
 # ROS2-Webcam-Image-Processing
 UTwente - Advanced Software Development for Robotics - Assigment 1.1
 
+## Description of the package
+The package contaiins two excecutables:
+1. Brightnes Level Detector - Creates a node that determines the average brightness of the image and, using some threshold,
+sends on a new topic if a the light is turned on (it is light) or off (it is dark).
+2. Light Position Indicator - Creates a node that, given a camera input, outputs the position of a bright light (if there is any)
+in pixel coordinates.
+
 ## Building the package
 Source your ROS2 SDK, then create a workspace, add this repository to its sources and build the packages.
 
