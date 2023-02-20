@@ -12,7 +12,7 @@ BrightnessLevelDetector::BrightnessLevelDetector() : Node("brightness_level_dete
     // Publisher declaraction and callback binding
     pPublisher = this->create_publisher<std_msgs::msg::String>("light_detector", 10);
 
-    // Time for callback
+    // Timer for callback
     pTimer = this->create_wall_timer(500ms, std::bind(&BrightnessLevelDetector::lightDetectionCallback, this));
 
     // Parameter name declaration and default value
