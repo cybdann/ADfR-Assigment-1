@@ -28,6 +28,7 @@ ament_target_dependencies(light_position_indicator rclcpp std_msgs sensor_msgs O
 
 install(TARGETS
   brightness_level_detector
+  light_position_indicator
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
