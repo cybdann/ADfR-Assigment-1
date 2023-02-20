@@ -114,10 +114,12 @@ void LightPositionIndicator::lightSourceCOGCallback()
     {
         // Concat int to string in form of [x,y]
         std::string temp = std::to_string(COG[0]) + "," + std::to_string(COG[1]);
-        msg.set__data(temp);
+        
+        // Log data
+        RCLCPP_INFO(this->get_logger(), "COG: x=%d | y=%d", COG[0], COG[1]);
 
         // Publish value
-        pPublisher->publish(msg);
+        pPublisher->publish(msg.set__data(temp));
     }
 }
 
