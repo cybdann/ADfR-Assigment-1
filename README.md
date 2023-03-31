@@ -1,5 +1,5 @@
 # ROS2-Webcam-Image-Processing
-UTwente - Advanced Software Development for Robotics - Assigment 1.1
+UTwente - Advanced Software Development for Robotics - Assigment 1
 
 ## Description of the package
 The package contaiins two excecutables:
